@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ismael",
+    "color": "#17aa25",
+    "icono": "fas fa-bone"
+  },
+  {
+    "id": 2,
+    "nombre": "David",
+    "color": "#ff9800",
+    "icono": "fas fa-gamepad"
+  },
+  {
+    "id": 3,
+    "nombre": "Roberto",
+    "color": "#aa0523",
+    "icono": "fas fa-plane"
+  },
+  {
+    "id": 4,
+    "nombre": "Luli",
+    "color": "#cc1fcb",
+    "icono": "fas fa-cannabis"
+  }
+]

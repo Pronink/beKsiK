@@ -1,0 +1,15 @@
+[
+  {"id": 1, "nombre": "Hacer comida"},
+  {"id": 2, "nombre": "Hacer cena"},
+  {"id": 3, "nombre": "Poner lavadora"},
+  {"id": 4, "nombre": "Tender ropa"},
+  {"id": 5, "nombre": "Doblar ropa"},
+  {"id": 6, "nombre": "Limpiar Conga"},
+  {"id": 7, "nombre": "Limpiar cocina"},
+  {"id": 8, "nombre": "Limpiar mesas"},
+  {"id": 9, "nombre": "Tirar la basura"},
+  {"id": 10, "nombre": "Comprar"},
+  {"id": 11, "nombre": "Recoger compra"},
+  {"id": 12, "nombre": "Poner lavavajillas"},
+  {"id": 13, "nombre": "Recoger lavavajillas"}
+]
