@@ -9,7 +9,7 @@ const dateFirstMonday = new Date(config['firstMondayDateYYYY-MM-DD']);
 const dateUtils = {
     getCurrentWeekNumber: ()=> {
         let start = moment(dateFirstMonday);
-        let end = moment().subtract(1, "days");
+        let end = moment();
         return Math.trunc(end.diff(start, "days") / 7);
     }
 };
