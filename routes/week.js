@@ -10,7 +10,7 @@ router.get('/read/:weekNumber?', function (req, res, next) {
     else
         weekNumber = dateUtils.getCurrentWeekNumber();
 
-    fileDBUtils.getWeek(weekNumber, true, data => {
+    fileDBUtils.board.getWeek(weekNumber, true, data => {
         res.send({
             weekData: data,
             weekNumber: weekNumber
@@ -23,7 +23,7 @@ router.get('/write/:weekNumber/:dayOfWeek/:categorieId/:userId', function (req, 
     let dayOfWeek = parseInt(req.params['dayOfWeek']);
     let categorieId = parseInt(req.params['categorieId']);
     let userId = parseInt(req.params['userId']);
-    fileDBUtils.addRecord(weekNumber, dayOfWeek, categorieId, userId, () => {
+    fileDBUtils.board.addRecord(weekNumber, dayOfWeek, categorieId, userId, () => {
         res.send({
             weekNumber: weekNumber,
             dayOfWeek: dayOfWeek,
@@ -39,7 +39,7 @@ router.get('/delete/:weekNumber/:dayOfWeek/:categorieId/:userId', function (req,
     let dayOfWeek = parseInt(req.params['dayOfWeek']);
     let categorieId = parseInt(req.params['categorieId']);
     let userId = parseInt(req.params['userId']);
-    fileDBUtils.deleteRecord(weekNumber, dayOfWeek, categorieId, userId, () => {
+    fileDBUtils.board.deleteRecord(weekNumber, dayOfWeek, categorieId, userId, () => {
         res.send({
             weekNumber: weekNumber,
             dayOfWeek: dayOfWeek,

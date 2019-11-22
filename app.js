@@ -21,7 +21,7 @@ app.use(logger(':method :url :status :response-time ms :user-agent'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // MIDDLEWARE PETICIONES/SEGUNDO
-let peticiones = 0;
+/*let peticiones = 0;
 app.get('*', function (req, res, next){
     peticiones++;
     next();
@@ -29,17 +29,16 @@ app.get('*', function (req, res, next){
 setInterval(()=>{
     console.log('Peticiones/segundo: ' + peticiones);
     peticiones = 0;
-}, 1000);
+}, 1000);*/
 
 // ROUTES
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 app.use('/week', require('./routes/week'));
+app.use('/tasks', require('./routes/tasks'));
 app.use('/categories', require('./routes/categories'));
 
 //module.exports = app;
-
-
 
 function onError(error) {
     if (error.syscall !== 'listen') {

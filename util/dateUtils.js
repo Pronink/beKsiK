@@ -7,7 +7,7 @@ const config = JSON.parse(fs.readFileSync('./config/general.json', 'utf8'));
 const dateFirstMonday = new Date(config['firstMondayDateYYYY-MM-DD']);
 
 const dateUtils = {
-    getCurrentWeekNumber: ()=> {
+    getCurrentWeekNumber: () => {
         let start = moment(dateFirstMonday);
         let end = moment();
         return Math.trunc(end.diff(start, "days") / 7);
